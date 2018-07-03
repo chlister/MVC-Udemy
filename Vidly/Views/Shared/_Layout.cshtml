@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<style>
+    table {
+         border-collapse: collapse;
+         Width: 100%;
+     }
+
+    td, th {
+        border: 1px solid #dddddd;
+        padding: 8px;
+        text-align: left;
+    }
+    li {
+        font-size: 15px;
+    }
+    
+</style>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Vidly</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    @Html.Partial("_NavBar")
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Vidly</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/lib")
+@*This line allows us to add a script section in our view - where needed*@
+    @RenderSection("scripts", required: false)
+</body>
+</html>
