@@ -277,6 +277,10 @@
     <Compile Include="Migrations\201805280654224_PopulateMovieTable.Designer.cs">
       <DependentUpon>201805280654224_PopulateMovieTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201807031207043_SeedUsers.cs" />
+    <Compile Include="Migrations\201807031207043_SeedUsers.Designer.cs">
+      <DependentUpon>201807031207043_SeedUsers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -567,7 +571,7 @@
     <Content Include="Views\Movies\Random.cshtml" />
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <Content Include="Views\Customer\Details.cshtml" />
-    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\List.cshtml" />
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Customer\CustomerForm.cshtml" />
     <Content Include="Views\Movies\MovieForm.cshtml" />
@@ -580,6 +584,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Movies\ReadOnlyList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -626,6 +631,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805280654224_PopulateMovieTable.resx">
       <DependentUpon>201805280654224_PopulateMovieTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201807031207043_SeedUsers.resx">
+      <DependentUpon>201807031207043_SeedUsers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
